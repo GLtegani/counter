@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: rgb(213, 213, 255);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+h1 {
+  font-size: 7rem;
+  color: rgb(83, 83, 240);
+  margin-bottom: 2rem;
+}
+
+.current-number {
+  font-size: 7rem;
+  color: rgb(21, 21, 184);
+  margin-bottom: 3rem;
+}
+
+button {
+  padding: 1rem;
+  border-radius: 0.8rem;
+  border-color: rgb(21, 21, 184);
+  background: none;
+  cursor: pointer;
+  color: rgb(21, 21, 184);
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(0.97);
+  background-color: rgb(21, 21, 184);
+  color: white;
+}
+
+.buttons-area {
+  display: flex;
+  gap: 1rem;
+}
