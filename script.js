@@ -28,14 +28,14 @@ resetBtn.onclick = () => {
   number.textContent = 0;
   numberStyles();
 
-}
+};
 
 increaseBtn.onclick = () => {
 
   number.textContent++;
   numberStyles();
-  
-}
+
+};
 
 decreaseBtn.onclick = () => {
 
