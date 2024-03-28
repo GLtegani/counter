@@ -1,28 +1,47 @@
 // VARIABLES
-let number = document.querySelector('.current-number');
-const decreaseBtn = document.getElementById('decrease-btn');
-const resetBtn = document.getElementById('reset-btn');
-const increaseBtn = document.getElementById('increase-btn');
+let number = document.querySelector('span');
+const decreaseBtn = document.querySelector('.decrease');
+const resetBtn = document.querySelector('.reset');
+const increaseBtn = document.querySelector('.increase');
 
 // FUNCTIONS
-resetBtn.onclick = (event) => {
-  event.preventDefault();
 
-  number.innerHTML = 0;
-}
+const numberStyles = () => {
 
-increaseBtn.onclick = (event) => {
-  event.preventDefault();
+  if(number.textContent < 0) {
 
-  number.innerHTML++;
-}
+    number.style.color = 'red';
 
-decreaseBtn.onclick = (event) => {
-  event.preventDefault();
+  } else if(number.textContent == 0) {
 
-  if(number.innerHTML <= 0 ) {
-    number.innerHTML = 0;
+    number.style.color = 'rgb(21, 21, 184)';
+
   } else {
-    number.innerHTML--;
+
+    number.style.color = 'green';
+
   };
 };
+
+resetBtn.onclick = () => {
+  
+  number.textContent = 0;
+  numberStyles();
+
+}
+
+increaseBtn.onclick = () => {
+
+  number.textContent++;
+  numberStyles();
+  
+}
+
+decreaseBtn.onclick = () => {
+
+  number.textContent--;
+  numberStyles();
+
+};
+
+

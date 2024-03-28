@@ -27,7 +27,7 @@ h1 {
   margin-bottom: 2rem;
 }
 
-.current-number {
+span {
   font-size: 7rem;
   color: rgb(21, 21, 184);
   margin-bottom: 3rem;
